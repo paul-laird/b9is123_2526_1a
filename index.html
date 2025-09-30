@@ -7,18 +7,22 @@
             //and a button to remove some
             //the remove function should update the weight
             //and let the user know when ok to proceed
-            let check=()=>alert('Checking Baggage weight: '+parseInt(document.getElementById('weight').value));
+            let check=()=>{
+              alert('Checking Baggage weight: '+parseInt(document.getElementById('weight').value));
+              document.getElementById('removed').style='display:block;'
+              document.getElementById('remB').style='display:block;'
+            }
             let remove=()=>alert('Removing weight: '+parseInt(document.getElementById('removed').value))
         </script>
     </head>
     <body>
         <input type="text" id="weight">
         <!--//replace button onclick with call to check function.-->
-        <button onclick="alert('Checking Baggage weight: '+parseInt(document.getElementById('weight').value))">Check Baggage</button>
+        <button onclick="check()">Check Baggage</button>
 <p>
-        <input type="text" id="removed" style.display="hidden">
+        <input type="text" id="removed" style='display:none;'>
         <!--//replace button onclick with call to check function.-->
-        <button onclick="remove()" style.display="hidden">Remove this much baggage (kg)</button>
+        <button id='remB' onclick="remove()" style='display:none;'>Remove this much baggage (kg)</button>
 
 </p>
 
