@@ -1,5 +1,6 @@
 <HTml>
     <head>
+        <script src="ex1.js"></script>
         <script>
             //alert("Hello");//write a check function here...
             //update: the check function should reveal the "removed" text input
@@ -9,6 +10,7 @@
             //and let the user know when ok to proceed
             let check=()=>{
               alert('Checking Baggage weight: '+parseInt(document.getElementById('weight').value));
+              //These should only display if it is actually overweight
               document.getElementById('removed').style='display:block;'
               document.getElementById('remB').style='display:block;'
             }
@@ -17,11 +19,11 @@
     </head>
     <body>
         <input type="text" id="weight">
-        <!--//replace button onclick with call to check function.-->
+        <!--//replace check function.-->
         <button onclick="check()">Check Baggage</button>
 <p>
         <input type="text" id="removed" style='display:none;'>
-        <!--//replace button onclick with call to check function.-->
+        <!--//replace remove function.-->
         <button id='remB' onclick="remove()" style='display:none;'>Remove this much baggage (kg)</button>
 
 </p>
