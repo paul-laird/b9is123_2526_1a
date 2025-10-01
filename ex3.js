@@ -6,7 +6,7 @@ let eulerlist=()=>
 {
     a=2//can un-hardcode
     b=3
-    l=[1,2,3,4,5,6,7,9,10,10,10]
+    l=[1,2,3,4,5,6,7,9,10,10,10]  //document.getElementById('l').value.split(" ").map((x=>parseInt(x)); // if l is space separated numbers
     //call listEuler1 and alert. - compute the sum of multiples of a or b in list l
 }
 let euler2Lists=()=>
