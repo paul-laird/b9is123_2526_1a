@@ -1,26 +1,14 @@
 <HTml>
     <head>
         <script src="ex1.js"></script>
-        <script>
-            //alert("Hello");//write a check function here...
-            //update: the check function should reveal the "removed" text input
-            //if the baggage is overweight
-            //and a button to remove some
-            //the remove function should update the weight
-            //and let the user know when ok to proceed
-            let check=()=>{
-              alert('Checking Baggage weight: '+parseInt(document.getElementById('weight').value));
-              //These should only display if it is actually overweight
-              document.getElementById('removed').style='display:block;'
-              document.getElementById('remB').style='display:block;'
-            }
-            let remove=()=>alert('Removing weight: '+parseInt(document.getElementById('removed').value))
-        </script>
+        <script src="ex2.js"></script>
     </head>
     <body>
-        <input type="text" id="weight">
+        <h1>Exercise 1</h1>
+        <p>        <input type="text" id="weight">
         <!--//replace check function.-->
-        <button onclick="check()">Check Baggage</button>
+        <button onclick="check()">Check Baggage</button></p>
+
 <p>
         <input type="text" id="removed" style='display:none;'>
         <!--//replace remove function.-->
@@ -28,7 +16,17 @@
 
 </p>
 
+<h1>Exercise 2</h1>
+    <p><button onclick="euler1()">Press for solution to project Euler</button>
+</p>
 
+<p>
+       <label for="a:">A</label> <input type="text" id="a">
+        <label for="b:">B</label><input type="text" id="b">
+       <label for="n:">N</label> <input type="text" id="n">
+
+</p>
+    <p><button onclick="eulerCustom()">Press for custom sum of multiples</button>
 
     </body>
 </HTml>
