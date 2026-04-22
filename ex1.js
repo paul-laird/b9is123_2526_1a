@@ -16,4 +16,4 @@
             }
             let remove=()=>alert('Removing weight: '+parseInt(document.getElementById('removed').value))
 
-            
+            //Test edit;
